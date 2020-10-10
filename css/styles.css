@@ -9,9 +9,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* #logo-img{
-    padding-top: 15%;
-    margin-left: 47%;
+#logo-img{
+    padding-top: 12%;
+    margin-left: 50%;
 }
 #logo-txt p{
     font-size: 3.5em;
@@ -19,16 +19,16 @@ body {
     text-align: center;
 }
 #logo-txt-sm{
-    font-size: 1em;
+    font-size: 1.3em;
 }
 .txt-sm{
-    font-size: .5em;
+    font-size: .7em;
 }
-#mouse{
+/* #mouse{
     height: 50px;
     margin-left: 49%;
     margin-top: 13%;
     background-image: url('../images/mouse.png');
     background-repeat: no-repeat;
     animation: bounce  1s infinite alternate;
-} */
+}  */
