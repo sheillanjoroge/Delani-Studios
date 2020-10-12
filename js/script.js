@@ -1,3 +1,20 @@
+function checkNotNull(value){
+    if(value == ""){
+        return true;
+    }else{
+        return false;
+    }
+}
+function myFunction() {
+    var name = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+
+    if ((username) && (email)) {
+
+        alert(username + ",We have received your message. Thank you for reaching out to us");
+    } else {
+        alert("Please Enter you email address")
+    }
 $(document).ready(function(){
     
     $('#design').click(function(){
@@ -27,16 +44,16 @@ $(document).ready(function(){
         var email = document.getElementById('email').value;
         var message = document.getElementById('message').value;
 
-        if(checkNotNull(user) || checkNotNull(email) || checkNotNull(message)){
-            danger(user, email, message);
+        if(checkNotNull(username) || checkNotNull(email) || checkNotNull(message)){
+            danger(username, email, message);
         }else{
             removeDanger();
             alert('Thank you '+user+' for reaching out. We will get back to you.');
         }
     });
 });
-function danger(user, email, message){
-    if(checkNotNull(user)){
+function danger(username, email, message){
+    if(checkNotNull(username)){
         $('#username').addClass('danger');
     }else{
         $('#username').removeClass('danger');
@@ -51,4 +68,4 @@ function danger(user, email, message){
     }else{
         $('#message').removeClass('danger');
     }
-}
+    }
