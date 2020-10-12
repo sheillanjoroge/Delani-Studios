@@ -1,5 +1,5 @@
 function checkNotNull(value){
-    if(value == ""){
+    if(value == "username"){
         return true;
     }else{
         return false;
