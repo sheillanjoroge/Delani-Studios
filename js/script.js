@@ -5,31 +5,6 @@ function checkNotNull(value){
         return false;
     }
 }
-
-function danger(user, email, message){
-    if(checkNotNull(user)){
-        $('#username').addClass('danger');
-    }else{
-        $('#username').removeClass('danger');
-    }
-    if(checkNotNull(email)){
-        $('#email').addClass('danger');
-    }else{
-        $('#email').removeClass('danger');
-    }
-    if(checkNotNull(message)){
-        $('#message').addClass('danger');
-    }else{
-        $('#message').removeClass('danger');
-    }
-}
-
-function removeDanger(){
-    $('#username').removeClass('danger');
-    $('#email').removeClass('danger');
-    $('#message').removeClass('danger');
-}
-
 $(document).ready(function(){
     
     $('#design').click(function(){
@@ -67,3 +42,28 @@ $(document).ready(function(){
         }
     });
 });
+
+function danger(user, email, message){
+    if(checkNotNull(user)){
+        $('#username').addClass('danger');
+    }else{
+        $('#username').removeClass('danger');
+    }
+    if(checkNotNull(email)){
+        $('#email').addClass('danger');
+    }else{
+        $('#email').removeClass('danger');
+    }
+    if(checkNotNull(message)){
+        $('#message').addClass('danger');
+    }else{
+        $('#message').removeClass('danger');
+    }
+}
+
+function removeDanger(){
+    $('#username').removeClass('danger');
+    $('#email').removeClass('danger');
+    $('#message').removeClass('danger');
+}
+
