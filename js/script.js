@@ -3,7 +3,7 @@ function checkNotNull(value){
         return true;
     }else{
         return false;
-    }
+    };
 }
 function myFunction() {
     var name = document.getElementById('username').value;
@@ -68,4 +68,4 @@ function danger(username, email, message){
     }else{
         $('#message').removeClass('danger');
     }
-    }
+}
