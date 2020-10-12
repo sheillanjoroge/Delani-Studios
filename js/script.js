@@ -22,19 +22,19 @@ $(document).ready(function(){
         });
     });
 
-//     $('form.validate').submit(function(event){
-//         var user = document.getElementById('username').value;
-//         var email = document.getElementById('email').value;
-//         var message = document.getElementById('message').value;
+    $('form.validate').submit(function(event){
+        var user = document.getElementById('username').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
 
-//         if(checkNotNull(user) || checkNotNull(email) || checkNotNull(message)){
-//             danger(user, email, message);
-//         }else{
-//             removeDanger();
-//             alert('Thank you '+user+' for reaching out. We will get back to you.');
-//         }
-//     });
-// });
+        if(checkNotNull(user) || checkNotNull(email) || checkNotNull(message)){
+            danger(user, email, message);
+        }else{
+            removeDanger();
+            alert('Thank you '+user+' for reaching out. We will get back to you.');
+        }
+    });
+});
 function danger(user, email, message){
     if(checkNotNull(user)){
         $('#username').addClass('danger');
