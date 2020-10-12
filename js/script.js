@@ -1,18 +1,18 @@
 $(document).ready(function(){
     
     $('#design').click(function(){
-        $('#design-img').toggle();
-        $('#design-txt').toggle();
+        $('#design-img').toggle(2000);
+        $('#design-txt').toggle(2000);
     });
 
     $('#development').click(function(){
-        $('#development-img').toggle();
-        $('#development-txt').toggle();
+        $('#development-img').toggle(2000);
+        $('#development-txt').toggle(2000);
     });
 
     $('#product').click(function(){
-        $('#product-img').toggle();
-        $('#product-txt').toggle();
+        $('#product-img').toggle(2000);
+        $('#product-txt').toggle(2000);
     });
 
     var days = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'];
@@ -51,4 +51,9 @@ function danger(user, email, message){
     }else{
         $('#message').removeClass('danger');
     }
+}
+function removeDanger(){
+    $('#username').removeClass('danger');
+    $('#email').removeClass('danger');
+    $('#message').removeClass('danger');
 }
