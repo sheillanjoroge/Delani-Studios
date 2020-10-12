@@ -15,11 +15,11 @@
 #logo-txt {
     font-size: 1.3em;
 }
-/* #logo-txt h1, h2{
+#logo-txt h1, h2{
     font-family:url('https://fonts.google.com/specimen/Sansita+Swashed');
     font-size: 2.5em;
-    color: white;
-    text-align: center;
+    colorwhite;
+    text-alig: n: center;
     padding-top: 2%;
 }
 
@@ -31,7 +31,7 @@ body {
     font-size: 1.3em;  
 }
 html{
-    scroll-behavior: smooth;    */
+    scroll-behavior: smooth;
 }
 #mouse{
     height: 55px;
