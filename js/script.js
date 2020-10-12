@@ -35,20 +35,20 @@ $(document).ready(function(){
         }
     });
 });
-// function danger(user, email, message){
-//     if(checkNotNull(user)){
-//         $('#username').addClass('danger');
-//     }else{
-//         $('#username').removeClass('danger');
-//     }
-//     if(checkNotNull(email)){
-//         $('#email').addClass('danger');
-//     }else{
-//         $('#email').removeClass('danger');
-//     }
-//     if(checkNotNull(message)){
-//         $('#message').addClass('danger');
-//     }else{
-//         $('#message').removeClass('danger');
-//     }
-// }
+function danger(user, email, message){
+    if(checkNotNull(user)){
+        $('#username').addClass('danger');
+    }else{
+        $('#username').removeClass('danger');
+    }
+    if(checkNotNull(email)){
+        $('#email').addClass('danger');
+    }else{
+        $('#email').removeClass('danger');
+    }
+    if(checkNotNull(message)){
+        $('#message').addClass('danger');
+    }else{
+        $('#message').removeClass('danger');
+    }
+}
