@@ -127,7 +127,7 @@ input[type="text"]::placeholder, input[type="email"]::placeholder{
     display: none;
     
 }
-/* @keyframes bounce{
+@keyframes bounce{
     from{
         transform: translateY(0px);
     }
@@ -145,7 +145,7 @@ input[type="text"]::placeholder, input[type="email"]::placeholder{
         width: 30%;
         height: 50%;
         margin-left: 35%;
-    } */
+    }
 
 /* @keyframes stretch {
     
