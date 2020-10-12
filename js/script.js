@@ -48,7 +48,7 @@ $(document).ready(function(){
             danger(username, email, message);
         }else{
             removeDanger();
-            alert('Thank you '+user+' for reaching out. We will get back to you.');
+            alert('Thank you '+username+' for reaching out. We will get back to you.');
         }
     });
 });
