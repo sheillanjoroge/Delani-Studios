@@ -1,20 +1,35 @@
 function checkNotNull(value){
-    if(value == "username"){
+    if(value == ""){
         return true;
     }else{
         return false;
-    };
-}
-function myFunction() {
-    var name = document.getElementById('username').value;
-    var email = document.getElementById('email').value;
-
-    if ((username) && (email)) {
-
-        alert(username + ",We have received your message. Thank you for reaching out to us");
-    } else {
-        alert("Please Enter you email address")
     }
+}
+
+function danger(user, email, message){
+    if(checkNotNull(user)){
+        $('#username').addClass('danger');
+    }else{
+        $('#username').removeClass('danger');
+    }
+    if(checkNotNull(email)){
+        $('#email').addClass('danger');
+    }else{
+        $('#email').removeClass('danger');
+    }
+    if(checkNotNull(message)){
+        $('#message').addClass('danger');
+    }else{
+        $('#message').removeClass('danger');
+    }
+}
+
+function removeDanger(){
+    $('#username').removeClass('danger');
+    $('#email').removeClass('danger');
+    $('#message').removeClass('danger');
+}
+
 $(document).ready(function(){
     
     $('#design').click(function(){
@@ -44,28 +59,11 @@ $(document).ready(function(){
         var email = document.getElementById('email').value;
         var message = document.getElementById('message').value;
 
-        if(checkNotNull(username) || checkNotNull(email) || checkNotNull(message)){
-            danger(username, email, message);
+        if(checkNotNull(user) || checkNotNull(email) || checkNotNull(message)){
+            danger(user, email, message);
         }else{
             removeDanger();
-            alert('Thank you '+username+' for reaching out. We will get back to you.');
+            alert('Thank you '+user+' for reaching out. We will get back to you.');
         }
     });
 });
-function danger(username, email, message){
-    if(checkNotNull(username)){
-        $('#username').addClass('danger');
-    }else{
-        $('#username').removeClass('danger');
-    }
-    if(checkNotNull(email)){
-        $('#email').addClass('danger');
-    }else{
-        $('#email').removeClass('danger');
-    }
-    if(checkNotNull(message)){
-        $('#message').addClass('danger');
-    }else{
-        $('#message').removeClass('danger');
-    }
-}
