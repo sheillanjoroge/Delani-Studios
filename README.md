@@ -5,7 +5,7 @@ This is a clone of the original Delani Studio as IP3.
 This site was created to practice HTML, CSS, JS, and jQuery. To show that I have acquired fundamental skills and that I can clone a website if provided the assets it requires.
 
 ## Setup/Installation Requirements
-git clone https://github.com/sheillanjoroge/Delani-Studios cd /Delani-Studios
+git clone https://github.com/sheillanjoroge/Delani-Studios.git cd /Delani-Studios
 
 ## Known Bugs
 There are no known bugs. If any bugs are noticed please reach out to me on the below contact details.
